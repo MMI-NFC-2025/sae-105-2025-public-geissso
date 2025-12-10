@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Echos Sonore : festival reggae & musiques actuelles — 28–31 octobre 2026 à Audincourt. Programme, artistes, scènes, infos pratiques." />
+    <title>Echos Sonore — Accueil</title>
+
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/icons/site.webmanifest" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER commun -->
+    <header class="header">
+      <a class="header__link" href="/src/index.html">
+        <img class="header__logo header__logo--light" src="/assets/icons/logo.svg" alt="Logo Echos Sonore" />
+      </a>
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled" role="list">
+          <li class="menu__item"><a class="menu__link" href="/src/festival.html">Le Festival</a></li>
+          <li class="menu__item"><a class="menu__link" href="/src/programme.html">Programme</a></li>
+          <li class="menu__item"><a class="menu__link" href="/src/artistes.html">Artistes</a></li>
+          <li class="menu__item"><a class="menu__link" href="/src/scenes.html">Scènes</a></li>
+          <li class="menu__item"><a class="menu__link" href="/src/infos.html">Infos pratiques</a></li>
+          <li class="menu__item"><a class="menu__link" href="/src/contact.html">Contact</a></li>
+          <li class="menu__item"><a class="btn" href="#billetterie">Billetterie</a></li>
+        </ul>
+        <ul class="menu__social-list u-list-unstyled" role="list" aria-label="Réseaux sociaux">
+          <li class="menu__social-item"><a class="menu__social-link" href="#">Instagram</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="#">Facebook</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="#">TikTok</a></li>
+        </ul>
+        <img class="menu__img" src="/src/assets/img/menu.avif" alt="" />
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero container">
+        <p class="hero__intro">Festival reggae<br /><span class="u-highlight">Audincourt</span></p>
+        <ul class="u-list-unstyled hero__list">
+          <li class="hero__item">28–31 octobre 2026</li>
+          <li class="hero__item">3 scènes</li>
+          <li class="hero__item">Programme complet</li>
+        </ul>
+        <h1 class="hero__title">Echos <span class="u-highlight">Sonore</span></h1>
+      </div>
+
+      <section class="section section--wrapper container">
+        <header class="section__header">
+          <h2 class="u-sr-only">Aperçu</h2>
+          <p class="section__chapo">Explore le programme, découvre les artistes et prépare ta venue.</p>
+        </header>
+        <ul class="u-list-unstyled grid grid--3">
+          <li class="card"><h3>Artistes</h3><p>Roots, Dub, Fusion.</p><a class="btn" href="/src/artistes.html">Découvrir</a></li>
+          <li class="card"><h3>Scènes</h3><p>Trois ambiances complémentaires.</p><a class="btn" href="/src/scenes.html">Explorer</a></li>
+          <li class="card"><h3>Infos pratiques</h3><p>Tarifs, accès, FAQ…</p><a class="btn" href="/src/infos.html">Préparer</a></li>
+        </ul>
+      </section>
+
+      <section class="section section--wrapper container" aria-labelledby="home-partenaires">
+        <header class="section__header">
+          <h2 id="home-partenaires" class="section__title">Partenaires</h2>
+        </header>
+        <div data-partners class="u-list-unstyled" role="list"></div>
+      </section>
+    </main>
+
+    <!-- FOOTER commun -->
+    <footer class="footer">
+      <p class="footer__text">Vibrez au rythme de la nature — <span class="u-highlight">28–31 octobre 2026</span>.</p>
+      <nav class="footer__nav" aria-label="Plan du site">
+        <ul class="u-list-unstyled footer__list">
+          <li class="footer__item"><a class="footer__link" href="/src/programme.html">Programme</a></li>
+          <li class="footer__item"><a class="footer__link" href="/src/artistes.html">Artistes</a></li>
+          <li class="footer__item"><a class="footer__link" href="/src/infos.html">Infos</a></li>
+        </ul>
+        <ul class="u-list-unstyled footer__list">
+          <li class="footer__item"><a class="footer__link footer__link--silent" href="#">Instagram</a></li>
+          <li class="footer__item"><a class="footer__link footer__link--silent" href="#">Facebook</a></li>
+          <li class="footer__item"><a class="footer__link footer__link--silent" href="#">TikTok</a></li>
+        </ul>
+      </nav>
+      <address class="footer__infos">
+        <p><a class="footer__mail" href="mailto:contact@echos-sonore.fr">contact@echos-sonore.fr</a></p>
+        <p class="footer__address">Rue du Dalse, 25400 Audincourt</p>
+      </address>
+    </footer>
+
+    <!-- Modal billetterie -->
+    <div id="billetterie" class="modal" role="dialog" aria-modal="true" aria-labelledby="bil-title" hidden>
+      <div class="modal__dialog" role="document">
+        <button class="modal__close" type="button" aria-label="Fermer" data-close>&times;</button>
+        <h2 id="bil-title">Billetterie — bientôt en ligne</h2>
+        <ul class="u-list-unstyled">
+          <li>Pass 1 jour — 35 €</li><li>Pass 2 jours — 60 €</li><li>Pass 3 jours — 80 €</li><li>Tarif réduit étudiant — -20 %</li>
+        </ul>
+        <p class="mt-8"><a class="btn" href="/src/programme.html">Voir le programme</a> <button class="btn btn--light" type="button" data-close>Fermer</button></p>
+      </div>
+    </div>
+  </body>
+</html>

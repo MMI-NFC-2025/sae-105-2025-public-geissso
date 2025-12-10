@@ -1,0 +1,42 @@
+:root{
+  /* Palette (guides) */
+  --col-green:#4B8F33; --col-yellow:#F1C24A; --col-orange:#D85C35; --col-brown:#6A4B2E; --col-cream:#F3EBD4;
+  --col-black:#1a1a1a; --col-white:#fff; --col-text:#2b2b2b; --col-muted:#6b6b6b;
+
+  --grad-hero:linear-gradient(180deg,var(--col-green)0%,var(--col-yellow)35%,var(--col-orange)70%,var(--col-brown)100%);
+  --grad-btn:linear-gradient(90deg,var(--col-yellow),var(--col-orange));
+
+  /* Typos : Titres = "Dina Chaumont" ; Corps = "Montserrat" */
+  --ff-title-1:"Dina Chaumont",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --ff-title-2:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --ff-body:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+
+  /* Échelle fluide mobile-first */
+  --fs-xxs:clamp(.72rem,.70rem + .2vw,.78rem);
+  --fs-xs: clamp(.84rem,.80rem + .3vw,.92rem);
+  --fs-sm: clamp(.95rem,.90rem + .4vw,1.05rem);
+  --fs-md: clamp(1.00rem,.95rem + .5vw,1.12rem);
+  --fs-lg: clamp(1.15rem,1.05rem + .8vw,1.45rem);
+  --fs-xl: clamp(1.45rem,1.15rem + 1.6vw,2rem);
+  --fs-2xl:clamp(2rem,1.4rem + 3vw,3rem);
+  --fs-3xl:clamp(2.4rem,1.8rem + 4vw,4rem);
+
+  --lh-tight:1.1; --lh-normal:1.55;
+  --fw-regular:400; --fw-semibold:600; --fw-bold:800;
+
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem;
+  --space-6:1.5rem; --space-8:2rem; --space-12:3rem; --space-16:4rem;
+
+  --radius-sm:8px; --radius-md:16px; --radius-lg:28px; --radius-pill:999px;
+
+  --shadow-soft:0 10px 30px rgba(0,0,0,.12);
+  --shadow-hard:0 20px 40px rgba(0,0,0,.18);
+  --shadow-inset:inset 0 1px 0 rgba(255,255,255,.4), inset 0 -1px 0 rgba(0,0,0,.15);
+
+  --container:min(1100px,92vw);
+  --transition:200ms ease;
+
+  /* Breakpoints */
+  --bp-sm:40rem;   /* ~640px */
+  --bp-md:60rem;   /* ~960px */
+}
