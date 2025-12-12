@@ -1,5 +1,3 @@
-@import url('map.css');
-
 .user__wrapper{
   border-radius:var(--radius-lg);
   overflow:hidden

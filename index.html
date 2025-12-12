@@ -13,12 +13,12 @@
     <link rel="manifest" href="/assets/icons/site.webmanifest" />
 
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <a class="header__link" href="/index.html">
-        <img class="header__logo header__logo--light" src="/assets/icons/logo.svg" alt="Logo Echos Sonore" />
+        <img class="header__logo header__logo--light" src="/assets/icons/logo.svg" alt="Logo Echos Sonore" width="120" height="40" />
       </a>
 
       <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
@@ -42,7 +42,7 @@
 
     <main>
       <figure class="hero-visual" aria-label="Visuel d'ambiance">
-        <img src="/assets/img/hero.webp" alt="hero" loading="eager" />
+        <img src="/assets/img/hero.webp" alt="hero" width="1920" height="600" loading="eager" />
       </figure>
 
       <section class="section section--wrapper container">
@@ -52,7 +52,7 @@
         </header>
         <ul class="u-list-unstyled grid grid--3">
           <li class="card card--no-padding">
-            <img src="/assets/img/article-1.webp" alt="Artistes du festival" loading="lazy">
+            <img src="/assets/img/article-1.webp" alt="Artistes du festival" width="400" height="200" loading="lazy">
             <div>
               <h3>Artistes</h3>
               <p>Roots, Dub, Fusion.</p>
@@ -60,7 +60,7 @@
             </div>
           </li>
           <li class="card card--no-padding">
-            <img src="/assets/img/article-2.webp" alt="Scènes du festival" loading="lazy">
+            <img src="/assets/img/article-2.webp" alt="Scènes du festival" width="400" height="200" loading="lazy">
             <div>
               <h3>Scènes</h3>
               <p>Trois ambiances complémentaires.</p>
@@ -68,7 +68,7 @@
             </div>
           </li>
           <li class="card card--no-padding">
-            <img src="/assets/img/article-3.webp" alt="Informations pratiques" loading="lazy">
+            <img src="/assets/img/article-3.webp" alt="Informations pratiques" width="400" height="200" loading="lazy">
             <div>
               <h3>Infos pratiques</h3>
               <p>Tarifs, accès, FAQ…</p>
@@ -114,6 +114,8 @@
         class="footer__logo"
         src="/assets/icons/logo.svg"
         alt="Logo Echos Sonore"
+        width="120"
+        height="40"
         loading="lazy" />
     </a>
 
@@ -138,19 +140,19 @@
     <!-- Réseaux sociaux -->
     <nav class="footer__social" aria-label="Réseaux sociaux">
       <a class="footer__social-link" href="#">
-        <img src="/assets/icons/instagram.svg" alt="Instagram" loading="lazy" />
+        <img src="/assets/icons/instagram.svg" alt="Instagram" width="24" height="24" loading="lazy" />
       </a>
 
       <a class="footer__social-link" href="#">
-        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" loading="lazy" />
+        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" width="24" height="24" loading="lazy" />
       </a>
 
       <a class="footer__social-link" href="#">
-        <img src="/assets/icons/youtube.svg" alt="YouTube" loading="lazy" />
+        <img src="/assets/icons/youtube.svg" alt="YouTube" width="24" height="24" loading="lazy" />
       </a>
 
       <a class="footer__social-link" href="#">
-        <img src="/assets/icons/twitter.svg" alt="Twitter" loading="lazy" />
+        <img src="/assets/icons/twitter.svg" alt="Twitter" width="24" height="24" loading="lazy" />
       </a>
     </nav>
 

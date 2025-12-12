@@ -11,9 +11,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/icons/site.webmanifest" />
   <link rel="stylesheet" href="/src/css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script type="module" src="/src/js/script.js"></script>
+  <script type="module" src="/src/js/script.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -42,7 +40,7 @@
     <div class="card" style="margin-bottom: var(--space-8);">
       <h3>📍 Localisation</h3>
       <p style="margin-bottom: var(--space-4);">Echos Sonore se déroule à Audincourt, dans le Doubs (25), à proximité de Montbéliard.</p>
-      <div id="map" class="map-container"></div>
+      <p><a class="btn" href="https://www.google.com/maps/place/Audincourt" target="_blank" rel="noopener">Voir sur Google Maps</a></p>
     </div>
 
     <ul class="u-list-unstyled grid grid--3">

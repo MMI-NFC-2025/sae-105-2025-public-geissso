@@ -80,7 +80,7 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 ------------------------------*/
 (() => {
   $$("[data-partners]").forEach((el) => {
-    const logos = PARTNERS.map((p) => `<img src="/assets/icons/${p.id}.svg" alt="${p.name}" class="partner-logo">`).join("");
+    const logos = PARTNERS.map((p) => `<img src="/assets/icons/${p.id}.svg" alt="${p.name}" class="partner-logo" loading="lazy" width="120" height="60">`).join("");
     el.innerHTML = `<div class="partners-track">${logos}${logos}</div>`;
   });
 })();
@@ -374,26 +374,6 @@ function initCarousel(carousel) {
 })();
 
 /* -----------------------------
-   Carte interactive (Leaflet)
+   Carte interactive (remplacée par lien Google Maps)
 ------------------------------*/
-(() => {
-  const mapContainer = document.getElementById('map');
-  if (!mapContainer) return;
-
-  // Coordonnées d'Audincourt
-  const audincourt = [47.4833, 6.8333];
-
-  // Initialiser la carte
-  const map = L.map('map').setView(audincourt, 13);
-
-  // Ajouter les tuiles OpenStreetMap
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    maxZoom: 19
-  }).addTo(map);
-
-  // Ajouter un marqueur
-  L.marker(audincourt).addTo(map)
-    .bindPopup('<strong>Echos Sonore 2026</strong><br>Audincourt, Doubs (25)')
-    .openPopup();
-})();
+// Code supprimé pour optimiser l'écoindex
