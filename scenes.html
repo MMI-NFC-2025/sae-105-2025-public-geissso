@@ -17,29 +17,93 @@
   <header class="header">
     <a class="header__link" href="/index.html"><img class="header__logo header__logo--light" src="/assets/icons/logo.svg" alt="Logo Echos Sonore" /></a>
     <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"><span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top" aria-hidden="true"></span><span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom" aria-hidden="true"></span></button>
-    <nav class="header__menu menu" id="mainNav" hidden></nav>
+    <nav class="header__menu menu" id="mainNav" hidden>
+      <ul class="menu__list u-list-unstyled" role="list">
+        <li class="menu__item"><a class="menu__link" href="/festival.html">Le Festival</a></li>
+        <li class="menu__item"><a class="menu__link" href="/programme.html">Programme</a></li>
+        <li class="menu__item"><a class="menu__link" href="/artistes.html">Artistes</a></li>
+        <li class="menu__item"><a class="menu__link" href="/scenes.html">Scènes</a></li>
+        <li class="menu__item"><a class="menu__link" href="/infos.html">Infos pratiques</a></li>
+        <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+        <li class="menu__item"><a class="btn" href="/billetterie.html">Billetterie</a></li>
+      </ul>
+      <img class="menu__img" src="/assets/img/menu.webp" alt="" loading="lazy" />
+    </nav>
   </header>
 
   <main class="container">
     <section class="section" aria-labelledby="scenes-title">
-      <header class="section__header"><h1 id="scenes-title" class="section__title">Les scènes</h1></header>
+      <header class="section__header">
+        <h1 id="scenes-title" class="section__title">Les scènes</h1>
+        <p class="section__chapo">Trois espaces uniques, trois ambiances différentes. Explorez les scènes qui font vibrer Echos Sonore.</p>
+      </header>
       <div id="scenes-grid" class="grid grid--3" role="list" aria-label="Liste des scènes"></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p class="footer__text">Vibrez au rythme de la nature — <span class="u-highlight">28–31 octobre 2026</span>.</p>
-    <nav class="footer__nav" aria-label="Plan du site">
-      <ul class="u-list-unstyled footer__list">
-        <li class="footer__item"><a class="footer__link" href="/programme.html">Programme</a></li>
-        <li class="footer__item"><a class="footer__link" href="/artistes.html">Artistes</a></li>
-        <li class="footer__item"><a class="footer__link" href="/infos.html">Infos</a></li>
-      </ul>
-      <ul class="u-list-unstyled footer__list">
-        <li class="footer__item"><a class="footer__link footer__link--silent" href="/billetterie.html">Billetterie</a></li>
+ <footer class="footer">
+  <div class="footer__inner">
+
+    <a href="/index.html" class="footer__logo-link">
+      <img
+        class="footer__logo"
+        src="/assets/icons/logo.svg"
+        alt="Logo Echos Sonore"
+        loading="lazy" />
+    </a>
+
+    <!-- Navigation -->
+    <nav class="footer__nav" aria-label="Navigation bas de page">
+      <ul class="footer__list u-list-unstyled" role="list">
+        <li class="footer__item">
+          <a class="footer__link" href="/programme.html">Programme</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/artistes.html">Artistes</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/infos.html">Infos</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/billetterie.html">Billetterie</a>
+        </li>
       </ul>
     </nav>
-    <address class="footer__infos"><p><a class="footer__mail" href="mailto:contact@echos-sonore.fr">contact@echos-sonore.fr</a></p><p class="footer__address">Rue du Dalse, 25400 Audincourt</p></address>
-  </footer>
+
+    <!-- Réseaux sociaux -->
+    <div class="footer__social" aria-label="Réseaux sociaux">
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/instagram.svg" alt="Instagram" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/youtube.svg" alt="YouTube" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/twitter.svg" alt="Twitter" loading="lazy" />
+      </a>
+    </div>
+
+    <!-- Contact -->
+    <address class="footer__contact">
+      <p>
+        <a class="footer__contact-link" href="mailto:contact@echos-sonore.fr">
+          contact@echos-sonore.fr
+        </a>
+      </p>
+
+      <p>
+        <a class="footer__contact-link" href="#">
+          Rue de Dalse, 25400 Audincourt
+        </a>
+      </p>
+    </address>
+  </div>
+</footer>
 </body>
 </html>

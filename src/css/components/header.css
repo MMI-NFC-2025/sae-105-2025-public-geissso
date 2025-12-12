@@ -1,0 +1,55 @@
+/* Header (mobile-first) */
+.header{
+    position:sticky;
+    top:0;z-index:50;
+    background:color-mix(in oklab,var(--col-cream) 80%,white 20%);
+    border-bottom:1px solid color-mix(in oklab,var(--col-brown) 20%, transparent);
+    backdrop-filter:saturate(1.1) blur(8px);
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    padding:.6rem 2rem 1rem;
+    
+}
+.header__link{
+    display:inline-flex;
+    align-items:center;
+    gap:.75rem
+}
+.header__logo{
+    height:36px
+}
+.header__logo--extend{
+    transform:scale(1.05)
+}
+.header__menu-btn{
+    margin-left:auto;
+    border:1px solid color-mix(in oklab,var(--col-brown) 25%, transparent);
+    border-radius:var(--radius-pill);
+    padding:.55rem .8rem;
+    box-shadow:var(--shadow-soft);
+    background:var(--col-white);
+    position:relative;
+    z-index:1001;
+}
+.menu-btn__bar{
+    display:block;
+    width:22px;
+    height:2px;
+    background:var(--col-black);
+    position:relative;
+    transition:transform .3s ease,opacity .3s ease;
+}
+.menu-btn__bar--bottom{
+    margin-top:6px
+}
+
+/* Animation burger -> croix */
+.header__menu-btn[aria-expanded="true"] 
+.menu-btn__bar--top{
+    transform:translateY(4px) rotate(45deg)
+}
+.header__menu-btn[aria-expanded="true"] 
+.menu-btn__bar--bottom{
+    transform:translateY(-4px) rotate(-45deg)
+}

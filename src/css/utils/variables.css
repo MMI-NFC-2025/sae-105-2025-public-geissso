@@ -1,5 +1,5 @@
 :root{
-  --col-green:#4B8F33; --col-yellow:#F1C24A; --col-orange:#D85C35; --col-brown:#6A4B2E; --col-cream:#F3EBD4;
+  --col-green:#3E8B3A; --col-yellow:#F4C542; --col-orange:#D45B3E; --col-brown:#6B4E33; --col-cream:#F8F0D9;
   --col-black:#1a1a1a; --col-white:#fff; --col-text:#2b2b2b; --col-muted:#6b6b6b;
 
   --grad-hero:linear-gradient(180deg,var(--col-green)0%,var(--col-yellow)35%,var(--col-orange)70%,var(--col-brown)100%);

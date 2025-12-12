@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Echos Sonore : festival reggae & musiques actuelles — 28–31 octobre 2026 à Audincourt. Programme, artistes, scènes, infos pratiques." />
-    <title>Echos Sonore — Accueil</title>
+    <title>Echos Sonore - Accueil</title>
 
     <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
@@ -34,36 +34,66 @@
           <li class="menu__item"><a class="menu__link" href="/scenes.html">Scènes</a></li>
           <li class="menu__item"><a class="menu__link" href="/infos.html">Infos pratiques</a></li>
           <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
-          <li class="menu__item"><a class="menu__link" href="/billetterie.html">Billetterie</a></li>
+          <li class="menu__item"><a class="btn" href="/billetterie.html">Billetterie</a></li>
         </ul>
-        <img class="menu__img" src="/src/assets/img/menu.avif" alt="" loading="lazy" />
+        <img class="menu__img" src="/assets/img/menu.webp" alt="" loading="lazy" />
       </nav>
     </header>
 
     <main>
-      <div class="hero container">
-        <p class="hero__intro">Festival reggae<br /><span class="u-highlight">Audincourt</span></p>
-        <ul class="u-list-unstyled hero__list">
-          <li class="hero__item">28–31 octobre 2026</li>
-          <li class="hero__item">3 scènes</li>
-          <li class="hero__item">Programme complet</li>
-        </ul>
-        <h1 class="hero__title">Echos <span class="u-highlight">Sonore</span></h1>
-        <figure class="media-round" aria-label="Visuel d’ambiance">
-          <img src="/src/assets/img/hero.jpg" alt="" loading="lazy" />
-        </figure>
-      </div>
+      <figure class="hero-visual" aria-label="Visuel d'ambiance">
+        <img src="/assets/img/hero.webp" alt="hero" loading="eager" />
+      </figure>
 
       <section class="section section--wrapper container">
         <header class="section__header">
           <h2 class="u-sr-only">Aperçu</h2>
-          <p class="section__chapo">Explore le programme, découvre les artistes et prépare ta venue.</p>
+          <h1 class="section__chapo">Explore le programme.</h1>
         </header>
         <ul class="u-list-unstyled grid grid--3">
-          <li class="card"><h3>Artistes</h3><p>Roots, Dub, Fusion.</p><a class="btn" href="/artistes.html">Découvrir</a></li>
-          <li class="card"><h3>Scènes</h3><p>Trois ambiances complémentaires.</p><a class="btn" href="/scenes.html">Explorer</a></li>
-          <li class="card"><h3>Infos pratiques</h3><p>Tarifs, accès, FAQ…</p><a class="btn" href="/infos.html">Préparer</a></li>
+          <li class="card card--no-padding">
+            <img src="/assets/img/article-1.webp" alt="Artistes du festival" loading="lazy">
+            <div>
+              <h3>Artistes</h3>
+              <p>Roots, Dub, Fusion.</p>
+              <a class="btn" href="/artistes.html">Découvrir</a>
+            </div>
+          </li>
+          <li class="card card--no-padding">
+            <img src="/assets/img/article-2.webp" alt="Scènes du festival" loading="lazy">
+            <div>
+              <h3>Scènes</h3>
+              <p>Trois ambiances complémentaires.</p>
+              <a class="btn" href="/scenes.html">Explorer</a>
+            </div>
+          </li>
+          <li class="card card--no-padding">
+            <img src="/assets/img/article-3.webp" alt="Informations pratiques" loading="lazy">
+            <div>
+              <h3>Infos pratiques</h3>
+              <p>Tarifs, accès, FAQ…</p>
+              <a class="btn" href="/infos.html">Préparer</a>
+            </div>
+          </li>
         </ul>
+      </section>
+
+      <section class="section section--wrapper container newsletter" aria-labelledby="newsletter-title">
+        <div class="newsletter__card">
+          <header class="section__header">
+            <h2 id="newsletter-title" class="section__title">Reçois la line-up en avant-première 😉</h2>
+            <p class="section__chapo">Actus, drops billetterie, horaires… zéro spam.</p>
+          </header>
+          <form class="newsletter__form" data-newsletter-form novalidate>
+            <label class="u-sr-only" for="newsletter-email">Ton email</label>
+            <div class="newsletter__fields">
+              <input id="newsletter-email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="exemple@mail.com" />
+              <button type="submit" class="btn_newsletter">Je m'inscris</button>
+            </div>
+            <p class="newsletter__legal">En cliquant, tu acceptes de recevoir les infos Echos Sonore. Tu peux te désinscrire en un clic.</p>
+            <p class="newsletter__status" data-newsletter-status hidden></p>
+          </form>
+        </div>
       </section>
 
       <section class="section section--wrapper container" aria-labelledby="home-partenaires">
@@ -72,24 +102,74 @@
         </header>
         <div data-partners class="u-list-unstyled" role="list"></div>
       </section>
+
+    
     </main>
 
-    <footer class="footer">
-      <p class="footer__text">Vibrez au rythme de la nature — <span class="u-highlight">28–31 octobre 2026</span>.</p>
-      <nav class="footer__nav" aria-label="Plan du site">
-        <ul class="u-list-unstyled footer__list">
-          <li class="footer__item"><a class="footer__link" href="/src/programme.html">Programme</a></li>
-          <li class="footer__item"><a class="footer__link" href="/src/artistes.html">Artistes</a></li>
-          <li class="footer__item"><a class="footer__link" href="/src/infos.html">Infos</a></li>
-        </ul>
-        <ul class="u-list-unstyled footer__list">
-          <li class="footer__item"><a class="footer__link footer__link--silent" href="/src/billetterie.html">Billetterie</a></li>
-        </ul>
-      </nav>
-      <address class="footer__infos">
-        <p><a class="footer__mail" href="mailto:contact@echos-sonore.fr">contact@echos-sonore.fr</a></p>
-        <p class="footer__address">Rue du Dalse, 25400 Audincourt</p>
-      </address>
-    </footer>
+   <footer class="footer">
+  <div class="footer__inner">
+
+    <a href="/index.html" class="footer__logo-link">
+      <img
+        class="footer__logo"
+        src="/assets/icons/logo.svg"
+        alt="Logo Echos Sonore"
+        loading="lazy" />
+    </a>
+
+    <!-- Navigation -->
+    <nav class="footer__nav" aria-label="Navigation bas de page">
+      <ul class="footer__list u-list-unstyled" role="list">
+        <li class="footer__item">
+          <a class="footer__link" href="/programme.html">Programme</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/artistes.html">Artistes</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/infos.html">Infos</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/billetterie.html">Billetterie</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Réseaux sociaux -->
+    <div class="footer__social" aria-label="Réseaux sociaux">
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/instagram.svg" alt="Instagram" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/youtube.svg" alt="YouTube" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/twitter.svg" alt="Twitter" loading="lazy" />
+      </a>
+    </div>
+
+    <!-- Contact -->
+    <address class="footer__contact">
+      <p>
+        <a class="footer__contact-link" href="mailto:contact@echos-sonore.fr">
+          contact@echos-sonore.fr
+        </a>
+      </p>
+
+      <p>
+        <a class="footer__contact-link" href="#">
+          Rue de Dalse, 25400 Audincourt
+        </a>
+      </p>
+    </address>
+  </div>
+</footer>
+
   </body>
 </html>

@@ -27,7 +27,7 @@
         <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
         <li class="menu__item"><a class="btn" href="/billetterie.html">Billetterie</a></li>
       </ul>
-      <img class="menu__img" src="/assets/img/menu.avif" alt="" loading="lazy" />
+      <img class="menu__img" src="/assets/img/menu.webp" alt="" loading="lazy" />
     </nav>
   </header>
 
@@ -50,19 +50,69 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p class="footer__text">Vibrez au rythme de la nature — <span class="u-highlight">28–31 octobre 2026</span>.</p>
-    <nav class="footer__nav" aria-label="Plan du site">
-      <ul class="u-list-unstyled footer__list">
-        <li class="footer__item"><a class="footer__link" href="/artistes.html">Artistes</a></li>
-        <li class="footer__item"><a class="footer__link" href="/scenes.html">Scènes</a></li>
-        <li class="footer__item"><a class="footer__link" href="/infos.html">Infos</a></li>
-      </ul>
-      <ul class="u-list-unstyled footer__list">
-        <li class="footer__item"><a class="footer__link footer__link--silent" href="/billetterie.html">Billetterie</a></li>
+ <footer class="footer">
+  <div class="footer__inner">
+
+    <a href="/index.html" class="footer__logo-link">
+      <img
+        class="footer__logo"
+        src="/assets/icons/logo.svg"
+        alt="Logo Echos Sonore"
+        loading="lazy" />
+    </a>
+
+    <!-- Navigation -->
+    <nav class="footer__nav" aria-label="Navigation bas de page">
+      <ul class="footer__list u-list-unstyled" role="list">
+        <li class="footer__item">
+          <a class="footer__link" href="/programme.html">Programme</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/artistes.html">Artistes</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/infos.html">Infos</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/billetterie.html">Billetterie</a>
+        </li>
       </ul>
     </nav>
-    <address class="footer__infos"><p><a class="footer__mail" href="mailto:contact@echos-sonore.fr">contact@echos-sonore.fr</a></p><p class="footer__address">Rue du Dalse, 25400 Audincourt</p></address>
-  </footer>
+
+    <!-- Réseaux sociaux -->
+    <div class="footer__social" aria-label="Réseaux sociaux">
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/instagram.svg" alt="Instagram" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/youtube.svg" alt="YouTube" loading="lazy" />
+      </a>
+
+      <a class="footer__social-link" href="#">
+        <img src="/assets/icons/twitter.svg" alt="Twitter" loading="lazy" />
+      </a>
+    </div>
+
+    <!-- Contact -->
+    <address class="footer__contact">
+      <p>
+        <a class="footer__contact-link" href="mailto:contact@echos-sonore.fr">
+          contact@echos-sonore.fr
+        </a>
+      </p>
+
+      <p>
+        <a class="footer__contact-link" href="#">
+          Rue de Dalse, 25400 Audincourt
+        </a>
+      </p>
+    </address>
+  </div>
+</footer>
 </body>
 </html>
