@@ -7,6 +7,7 @@
 - PRÉNOM :Solène
 - GROUPE :C1
 - URL du site :https://echossonoresae105.netlify.app/
+- URL Nom de domain personnalisé: http://echos-sonore-sae105.geiss-solene.fr/
 - URL FIGMA : https://www.figma.com/design/QfsAFDS6AhlYdPYODK2rPb/GEISS_Sol%C3%A8ne_SAE103?node-id=114-242&t=mHTLU8TPbSwKpyw1-1
 
 ## Sujet

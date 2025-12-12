@@ -147,8 +147,8 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
     list.innerHTML =
       out.map((x) => `
-      <article class="card artist-card" role="listitem">
-        <img class="artist-card__thumb" src="${getImagePath(x.artist.id)}" alt="Photo de ${x.artist.name}, artiste ${x.artist.genre}" loading="lazy">
+      <article class="card artist__card" role="listitem">
+        <img class="artist__card-thumb" src="${getImagePath(x.artist.id)}" alt="Photo de ${x.artist.name}, artiste ${x.artist.genre}" loading="lazy">
         <div>
           <div class="chips" role="list">
             <span class="chips__item" role="listitem">${DAYS.find((i) => i.id === x.day).label}</span>
@@ -179,8 +179,8 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
     .map(
       (a) => `
     <a class="card" href="/artiste.html?id=${a.id}" role="listitem">
-      <div class="artist-card">
-        <img class="artist-card__thumb" src="${getImagePath(a.id)}" alt="Photo de ${a.name}, artiste ${a.genre}" loading="lazy">
+      <div class="artist__card">
+        <img class="artist__card-thumb" src="${getImagePath(a.id)}" alt="Photo de ${a.name}, artiste ${a.genre}" loading="lazy">
         <div>
           <h3 class="m-0">${a.name}</h3>
           <div class="chips"><span class="chips__item">${a.genre}</span></div>
@@ -211,12 +211,12 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
   // Générer 3 images de galerie (artiste-1.webp, artiste-2.webp, artiste-3.webp)
   const gal = [1, 2, 3]
-    .map(i => `<div class="carousel__slide"><img class="media-round" src="/assets/img/${a.id}-${i}.webp" alt="${a.name} en performance - Photo ${i}" loading="lazy"></div>`)
+    .map(i => `<div class="carousel__slide"><img class="media__round" src="/assets/img/${a.id}-${i}.webp" alt="${a.name} en performance - Photo ${i}" loading="lazy"></div>`)
     .join("");
 
   wrap.innerHTML = `
     <div class="grid u-grid-col-2">
-      <div class="card"><img class="media-round" src="${getImagePath(a.id)}" alt="Photo de ${a.name} en concert" loading="lazy"></div>
+      <div class="card"><img class="media__round" src="${getImagePath(a.id)}" alt="Photo de ${a.name} en concert" loading="lazy"></div>
       <div class="card">
         <h1 class="m-0">${a.name}</h1>
         <div class="chips mt-8" role="list">${slots}</div>
@@ -248,7 +248,7 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
     grid.innerHTML = SCENES.map(
       (s) => `
       <a class="card" href="/scene.html?id=${s.id}" role="listitem">
-        <img class="media-round" src="${getImagePath(s.id)}" alt="Vue de la ${s.name}" loading="lazy">
+        <img class="media__round" src="${getImagePath(s.id)}" alt="Vue de la ${s.name}" loading="lazy">
         <h3>${s.name}</h3>
       </a>`
     ).join("");
@@ -264,15 +264,15 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
       .sort((a, b) => (a.slots[0].day + a.slots[0].time).localeCompare(b.slots[0].day + b.slots[0].time));
 
     detail.innerHTML = `
-      <div class="card"><img class="media-round" src="${getImagePath(s.id)}" alt="Vue panoramique de la ${s.name}" loading="lazy"></div>
+      <div class="card"><img class="media__round" src="${getImagePath(s.id)}" alt="Vue panoramique de la ${s.name}" loading="lazy"></div>
       <h1>${s.name}</h1>
       <div class="grid grid--3">
         ${playing
           .map(
             (a) => `
           <a class="card" href="/artiste.html?id=${a.id}">
-            <div class="artist-card">
-              <img class="artist-card__thumb" src="${getImagePath(a.id)}" alt="Photo de ${a.name}, artiste ${a.genre}" loading="lazy">
+            <div class="artist__card">
+              <img class="artist__card-thumb" src="${getImagePath(a.id)}" alt="Photo de ${a.name}, artiste ${a.genre}" loading="lazy">
               <div>
                 <h3 class="m-0">${a.name}</h3>
                 <div class="chips">
