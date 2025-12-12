@@ -18,52 +18,52 @@
 .card--no-padding > div{
     padding:var(--space-4)
 }
-.media-round{
+.media__round{
     border-radius:var(--radius-lg);
     overflow:hidden
 }
 
-.card-stat{
+.card__stat{
     background:var(--col-white);
     border-radius:var(--radius-md);
     padding:var(--space-6);
     box-shadow:var(--shadow-soft);
     border:1px solid color-mix(in oklab,var(--col-brown)12%,transparent)
 }
-.card-stat__value{
+.card__stat-value{
     font-family:var(--ff-title-1),var(--ff-title-2);
     font-size:var(--fs-2xl);
     margin:0
 }
-.card-stat__thumbnails{
+.card__stat-thumbnails{
     display:flex;
     gap:.4rem;
     margin-top:.6rem
 }
-.thumbnail{
+.card__thumbnail{
     width:56px;
     height:56px;
     object-fit:cover;
     border-radius:10px
 }
 
-.card-project{
+.card__project{
     background:transparent;
     padding:0
 }
-.card-project__img{
+.card__project-img{
     border-radius:var(--radius-lg);
     box-shadow:var(--shadow-soft)
 }
 
-.card-process{background:var(--col-white);
+.card__process{background:var(--col-white);
     border-radius:var(--radius-md);
     padding:var(--space-6);
     box-shadow:var(--shadow-soft);
     border:1px solid color-mix(in oklab,var(--col-brown)12%,transparent)
 }
 
-.card-process__number{
+.card__process-number{
     font-weight:var(--fw-bold);
     margin:0 0 .5rem
 }

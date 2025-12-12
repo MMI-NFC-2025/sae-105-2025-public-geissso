@@ -94,8 +94,8 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 ------------------------------*/
 (() => {
   $$("[data-partners]").forEach((el) => {
-    const logos = PARTNERS.map((p) => `<img src="/assets/icons/${p.id}.svg" alt="${p.name}" class="partner-logo" loading="lazy" width="120" height="60">`).join("");
-    el.innerHTML = `<div class="partners-track">${logos}${logos}</div>`;
+    const logos = PARTNERS.map((p) => `<img src="/assets/icons/${p.id}.svg" alt="${p.name}" class="partners__logo" loading="lazy" width="120" height="60">`).join("");
+    el.innerHTML = `<div class="partners__track">${logos}${logos}</div>`;
   });
 })();
 
