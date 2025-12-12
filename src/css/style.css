@@ -13,6 +13,7 @@
     Composants
     =========================================== */
 @import url("./components/components.css");
+@import url("./components/menu.css");
 @import url("./components/cards.css");
 @import url("./components/footer.css");
 @import url("./components/header.css");
