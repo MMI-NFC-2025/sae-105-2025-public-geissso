@@ -52,6 +52,15 @@ const nav = document.querySelector(".menu");
 const logo = document.querySelector(".header__logo");
 const page = document.body;
 
+const closeMenu = () => {
+  if (!toggle || !nav) return;
+  toggle.ariaExpanded = "false";
+  nav.hidden = true;
+  nav.classList.remove("menu--open");
+  logo && logo.classList.remove("header__logo--extend");
+  page.classList.remove("u-noscroll");
+};
+
 if (toggle && nav) {
   toggle.addEventListener("click", () => {
     const isOpen = toggle.ariaExpanded === "true";
@@ -65,6 +74,11 @@ if (toggle && nav) {
     nav.classList.toggle("menu--open", isClosed);
     logo && logo.classList.toggle("header__logo--extend", isClosed);
     page.classList.toggle("u-noscroll", isClosed);
+  });
+
+  // Fermer le menu quand on clique sur un lien
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", closeMenu);
   });
 }
 
