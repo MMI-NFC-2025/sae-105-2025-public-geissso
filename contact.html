@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Formulaire de contact, coordonnées et réseaux sociaux d’Echos Sonore." />
-  <title>Echos Sonore — Contact</title>
+  <title>Echos Sonore - Contact</title>
 
     <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/icons/site.webmanifest" />
   <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="/src/css/components/contact.css" />
   <script type="module" src="/src/js/script.js" defer></script>
 </head>
 <body>
@@ -31,21 +32,33 @@
     </nav>
   </header>
 
-  <main class="container section">
-    <header class="section__header">
-      <h1 class="section__title">Contact</h1>
-      <p class="section__chapo">Une question, une suggestion ? L'équipe d'Echos Sonore est à votre écoute.</p>
-    </header>
-    <div class="grid u-grid-col-2">
-      <form class="card" aria-label="Formulaire de contact" onsubmit="event.preventDefault(); alert('Message envoyé !');">
-        <label for="f-name">Nom</label><input id="f-name" required style="width:100%" aria-required="true"><br><br>
-        <label for="f-email">Email</label><input id="f-email" type="email" required style="width:100%" aria-required="true"><br><br>
-        <label for="f-subject">Sujet</label><input id="f-subject" style="width:100%"><br><br>
-        <label for="f-message">Message</label><textarea id="f-message" rows="6" required style="width:100%" aria-required="true"></textarea><br><br>
-        <button class="btn" aria-label="Envoyer le message">Envoyer</button>
+  <main class="contact-section">
+    <img class="contact-section__leaf contact-section__leaf--top" src="/assets/img/back_leaf.webp" alt="" loading="lazy" aria-hidden="true">
+    
+    <div class="contact-container">
+      <h1 class="contact__title">Formulaire de contact</h1>
+      
+      <form class="contact-form" aria-label="Formulaire de contact" onsubmit="event.preventDefault(); alert('Message envoyé !');">
+        <div class="contact-form__field">
+          <label for="f-name" class="contact-form__label">Nom</label>
+          <input id="f-name" class="contact-form__input" type="text" required aria-required="true" placeholder="..">
+        </div>
+        
+        <div class="contact-form__field">
+          <label for="f-email" class="contact-form__label">Mail</label>
+          <input id="f-email" class="contact-form__input" type="email" required aria-required="true" placeholder="..">
+        </div>
+        
+        <div class="contact-form__field">
+          <label for="f-message" class="contact-form__label">Message</label>
+          <textarea id="f-message" class="contact-form__textarea" rows="8" required aria-required="true" placeholder=".."></textarea>
+        </div>
+        
+        <button class="btn" type="submit" aria-label="Envoyer le message">Envoyer</button>
       </form>
-      <section class="card" aria-labelledby="coords"><h3 id="coords">Coordonnées</h3><address>contact@echos-sonore.fr<br>+33 3 00 00 00 00<br>Rue du Dalse, 25400 Audincourt</address></section>
     </div>
+
+    <img class="contact-section__leaf contact-section__leaf--bottom" src="/assets/img/back_leaf.webp" alt="" loading="lazy" aria-hidden="true">
   </main>
 
   <footer class="footer">

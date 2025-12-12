@@ -30,22 +30,3 @@ h1,.h1{font-family:"Dina Chaumont";font-weight:700;font-size:var(--fs-3xl)} h2,.
 
 
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.2rem;border-radius:var(--radius-pill);border:0;background:var(--grad-btn);color:var(--col-black);font-weight:var(--fw-semibold);box-shadow:var(--shadow-soft);transition:transform var(--transition),box-shadow var(--transition)}
-.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-hard)}
-.btn--light{background:var(--col-white)}
-.btn_newsletter{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:.5rem;
-    padding:.8rem 1.2rem;
-    border-radius:var(--radius-pill);
-    border:0;
-    background:var(--col-brown);
-    color:var(--col-white);
-    font-weight:var(--fw-semibold);
-    box-shadow:var(--shadow-soft);
-    transition:transform var(--transition),box-shadow var(--transition)}
-
-
-

@@ -14,12 +14,14 @@
     =========================================== */
 @import url("./components/components.css");
 @import url("./components/menu.css");
+@import url("./components/button.css");
 @import url("./components/cards.css");
 @import url("./components/footer.css");
 @import url("./components/header.css");
 @import url("./components/newsletter.css");
 @import url("./components/map.css");
 @import url("./components/filtre.css");
+@import url("./components/contact.css");
 /** ==========================================
     Utilitaires
     =========================================== */

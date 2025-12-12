@@ -1,0 +1,125 @@
+/* Contact Section - Design Figma */
+.contact-section {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+}
+
+/* Feuilles décoratives */
+.contact-section__leaf {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.contact-section__leaf--top {
+  top: 0;
+  left: 0;
+  transform: scaleY(-1);
+}
+
+.contact-section__leaf--bottom {
+  bottom: 0;
+  left: 0;
+  transform: rotate(360deg) scaleX(-1);
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-family: "Dina Chaumont", sans-serif;
+  font-weight: 700;
+  font-size: var(--fs-3xl);
+  text-align: center;
+  color: var(--col-black);
+  margin: 0 0 var(--space-8) 0;
+  text-transform: lowercase;
+}
+
+.contact-form {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.contact-form__field {
+  margin-bottom: var(--space-6);
+}
+
+.contact-form__label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+  color: var(--col-black);
+  margin-bottom: var(--space-2);
+  font-weight: var(--fw-medium);
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: none;
+  border-radius: var(--radius-lg);
+  background: white;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  color: var(--col-black);
+  transition: box-shadow 0.2s ease;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.contact-form__textarea {
+  resize: vertical;
+  min-height: 150px;
+  font-family: var(--font-body);
+}
+
+.contact-form .btn {
+  display: block;
+  margin: var(--space-6) auto 0;
+}
+
+/* Responsive */
+@media (min-width: 40rem) {
+  .contact-container {
+    max-width: 500px;
+  }
+
+  .contact__title {
+    font-size: var(--fs-2xl);
+  }
+}
+
+@media (min-width: 60rem) {
+  .contact-section__leaf {
+    max-height: 400px;
+  }
+}
+
