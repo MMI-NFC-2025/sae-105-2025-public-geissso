@@ -105,3 +105,47 @@
   0%{transform:translateX(0)}
   100%{transform:translateX(-50%)}
 }
+
+.carousel{
+  position:relative;
+  margin-top:var(--space-4)
+}
+.carousel__track{
+  display:flex;
+  gap:var(--space-4);
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  scrollbar-width:thin;
+  padding-bottom:var(--space-2)
+}
+.carousel__track::-webkit-scrollbar{
+  height:8px
+}
+.carousel__track::-webkit-scrollbar-thumb{
+  background:var(--col-brown);
+  border-radius:4px
+}
+.carousel__slide{
+  flex:0 0 100%;
+  scroll-snap-align:start;
+  height:400px;
+  overflow:hidden;
+  border-radius:var(--radius-lg)
+}
+.carousel__slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block
+}
+.carousel__controls{
+  display:flex;
+  gap:.75rem;
+  margin-top:var(--space-3);
+  justify-content:center
+}
+.carousel__button--prev:disabled,.carousel__button--next:disabled{
+  opacity:.4;
+  cursor:not-allowed
+}
