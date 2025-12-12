@@ -1,0 +1,63 @@
+newsletter.css
+.newsletter{
+  margin-top:var(--space-16)
+}
+.newslettercard{
+  position:relative;
+  overflow:hidden;
+  background:var(--col-yellow);
+  border-radius:var(--radius-lg);
+  padding:clamp(1.5rem,4vw,2.5rem);
+  box-shadow:var(--shadow-hard);
+  color:var(--col-black)
+}
+.newsletterform{
+  display:grid;
+  gap:var(--space-4);
+  max-width:640px
+}
+.newsletterfields{
+  gap:var(--space-3);
+  align-items:stretch;
+  flex-wrap:wrap
+}
+.newsletterfields input[type="email"]{
+  flex:1 1 220px;
+  border:1px solid color-mix(in oklab,var(--col-brown)20%,transparent);
+  border-radius:var(--radius-pill);
+  padding:.95rem 1.1rem;
+  font:inherit;
+  background:rgba(255,255,255,.92);
+  color:var(--col-black);
+  box-shadow:var(--shadow-soft)
+}
+.newsletterfields input[type="email"]:focus-visible{
+  outline:3px solid var(--col-yellow);
+  outline-offset:2px
+}
+.newsletterlegal{
+  font-size:var(--fs-sm);
+  color:var(--col-muted);
+  margin:0;
+}
+.newsletterstatus{
+  margin:0;
+  font-weight:var(--fw-semibold);
+  padding:.65rem 1rem;
+  border-radius:var(--radius-sm);
+  background:rgba(0,0,0,.06);
+  color:var(--col-black)
+}
+.newsletterstatus.is-success{
+  background:rgba(53, 168, 83,.18);
+  color:#1f6b34
+}
+.newsletterstatus.is-error{
+  background:rgba(216,92,53,.18);
+  color:var(--col-orange)
+}
+
+@media (max-width:50rem){
+  .newsletterfields{flex-direction:column}
+  .newsletterfields input[type="email"],.newsletterfields .btn{width:100%}
+}
