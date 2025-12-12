@@ -9,15 +9,19 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
   margin-bottom: var(--space-6);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .filters label {
   flex: 1 1 auto;
   min-width: 180px;
+  max-width: 100%;
 }
 
 .filters__control {
   width: 100%;
+  max-width: 100%;
   padding: 0.75rem 1rem;
   border: 1px solid color-mix(in oklab, var(--col-brown) 20%, transparent);
   border-radius: var(--radius-pill);
@@ -26,6 +30,7 @@
   background: var(--col-cream);
   color: var(--col-text);
   transition: all var(--transition);
+  box-sizing: border-box;
 }
 
 .filters__control:focus {
