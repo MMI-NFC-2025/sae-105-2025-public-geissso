@@ -304,7 +304,17 @@ $$(".carousel").forEach(initCarousel);
   });
 })();
 
-/* -----------------------------
-   Carte interactive (remplacée par lien Google Maps)
-------------------------------*/
-// Code supprimé pour optimiser l'écoindex
+// Carte Google Maps Embed
+(() => {
+  const mapContainer = $("#map-embed");
+  if (!mapContainer) return;
+  
+  const iframe = document.createElement("iframe");
+  iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43031.94!2d6.84!3d47.49!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479233c3cfd6e729%3A0x408ab2ae4bb21f0!2sAudincourt!5e0!3m2!1sfr!2sfr!4v1234567890";
+  iframe.loading = "lazy";
+  iframe.title = "Carte de localisation d'Audincourt";
+  iframe.allowFullscreen = true;
+  iframe.referrerPolicy = "no-referrer-when-downgrade";
+  
+  mapContainer.appendChild(iframe);
+})();
