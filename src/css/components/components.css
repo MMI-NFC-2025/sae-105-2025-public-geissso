@@ -1,1 +1,107 @@
+@import url('map.css');
 
+.user__wrapper{
+  border-radius:var(--radius-lg);
+  overflow:hidden
+}
+.user__img{
+  display:block;
+  width:100%;
+  height:auto
+}
+.user-others__wrapper{
+  display:grid;
+  place-items:center;
+  height:100%;
+  min-height:140px;
+  background:var(--col-cream);
+  border-radius:var(--radius-md);
+  font-weight:var(--fw-bold);
+  font-size:var(--fs-lg)
+}
+.user-others__number{
+  font-size:var(--fs-3xl)
+}
+
+.hero-visual{
+  margin:0;width:100%
+  ;overflow:hidden
+}
+.hero-visual img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:cover;
+  max-height:70vh
+}
+
+@media (min-width:40rem){
+  .hero-visual{
+    border-radius:var(--radius-lg);
+    max-width:var(--container);
+    margin-inline:auto;
+    padding-inline:clamp(.8rem,2vw,1rem)
+  }
+}
+
+.table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:var(--fs-sm)
+}
+.table th,.table td{
+  padding:.6rem .8rem;
+  border-bottom:1px solid color-mix(in oklab,var(--col-brown)15%,transparent)
+}
+
+.faq__item{
+  background:var(--col-white);
+  border-radius:var(--radius-md);
+  padding:var(--space-4);
+  box-shadow:var(--shadow-soft);
+  border:1px solid color-mix(in oklab,var(--col-brown)12%,transparent)
+}
+.faq__summary{
+  cursor:pointer
+}
+.faq__title{
+  margin:0
+}
+
+.artist-card{display:grid;grid-template-columns:72px 1fr;gap:var(--space-4);align-items:center}
+.artist-card__thumb{width:72px;height:72px;object-fit:cover;border-radius:var(--radius-md)}
+@media (min-width: var(--bp-sm)){.artist-card{grid-template-columns:96px 1fr}.artist-card__thumb{width:96px;height:96px}}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap}
+.chips__item{background:var(--col-cream);border-radius:var(--radius-pill);padding:.35rem .7rem;font-size:var(--fs-xs)}
+
+/* Partenaires */
+.badge--partner{
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.35rem .6rem;
+  background:var(--col-white);
+  border-radius:var(--radius-pill);
+  box-shadow:var(--shadow-soft);
+  border:1px solid color-mix(in oklab,var(--col-brown)20%,transparent)
+}
+
+[data-partners]{
+  overflow:hidden;
+  position:relative;
+  width:100%
+}
+.partners-track{
+  display:flex;
+  gap:var(--space-8);
+  align-items:center;
+  animation:scroll-partners 30s linear infinite;
+  width:max-content
+}
+.partner-logo{height:60px;width:auto;object-fit:contain;image-rendering:crisp-edges;image-rendering:-webkit-optimize-contrast;transition:opacity 0.3s ease}
+.partner-logo:hover{opacity:0.8}
+
+@keyframes scroll-partners{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
